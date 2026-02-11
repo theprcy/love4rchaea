@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+    font-family: 'Pangolin', cursive;
+}
+
+.card {
+    @apply bg-white p-8 rounded-3xl shadow-xl border-2 border-pink-200 max-w-sm w-full text-center relative;
+}
+
+.btn-primary {
+    @apply bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform active:scale-95 z-50;
+}
+
+.btn-secondary {
+    @apply bg-gray-400 text-white font-bold py-3 px-8 rounded-full shadow-lg z-10;
+}
+
+.checkbox-container {
+    @apply flex items-center gap-3 cursor-pointer accent-pink-500;
+}
+
+.itinerary-item {
+    @apply p-3 bg-rose-50 rounded-lg border border-rose-100;
+}
+
+.time {
+    @apply block font-bold text-rose-500;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a special invite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="bg-rose-50 min-h-screen flex flex-col items-center justify-center p-4 overflow-hidden">
+
+    <section id="step-1" class="card fade-in">
+        <img src="https://i.pinimg.com/originals/4b/0c/0b/4b0c0b4cc135f0ac1a8adae20eeac678.gif" class="w-60 mx-auto mb-4">
+        <h1 class="text-3xl font-bold text-rose-600 mb-8">Will you be my Valentine?</h1>
+        <div class="flex justify-center items-center gap-4 h-16">
+            <div><button onclick="goToStep2()" class="btn-primary">YES!</button></div>
+            <div><button id="no-button" class="btn-secondary absolute">No</button></div>
+        </div>
+    </section>
+
+    <section id="step-2" class="card hidden fade-in">
+        <h2 class="text-2xl font-bold text-rose-600 mb-4">Official Date Consent Form 📝</h2>
+        <div class="text-left space-y-4 mb-6 text-rose-700">
+            <div>
+                <label class="checkbox-container"><input type="checkbox" class="consent-checkbox"> Required to hold hands</label>
+            </div>
+            <div>
+                <label class="checkbox-container"><input type="checkbox" class="consent-checkbox"> Must agree to 30++ cute photos together</label>
+            </div>
+            <div>
+                <label class="checkbox-container"><input type="checkbox" class="consent-checkbox"> Must wear grey/blue shirt</label>
+            </div>
+            <div>
+                <label class="checkbox-container"><input type="checkbox" class="consent-checkbox"> Unlimited kisses all day all night</label>
+        </div>
+            </div>
+            
+        <button id="submit-btn" disabled onclick="goToStep3()" 
+                class="w-full bg-gray-300 text-white font-bold py-3 rounded-xl cursor-not-allowed transition-all">
+            Submit Form
+        </button>
+        <p id="warning-msg" class="text-xs text-rose-400 mt-2">All boxes must be checked to proceed ^^ 💕</p>
+    </section>
+
+    <section id="step-3" class="card hidden fade-in">
+        <h2 class="text-3xl font-bold text-rose-600 mb-2">Our Date Plan! ✨</h2>
+        <div class="space-y-4 my-6">
+            <div class="itinerary-item">
+                <span class="time">1.00 PM</span>
+                <p>Regent's canal and Regent's park walk & talk</p>
+            </div>
+            <div class="itinerary-item">
+                <span class="time">2.30 PM</span>
+                <p>Camden Market</p>
+            </div>
+            <div class="itinerary-item">
+                <span class="time">4.30 PM</span>
+                <p>Chill out at Wetherspoon</p>
+            </div>
+            <div class="itinerary-item">
+                <span class="time">5.30 PM</span>
+                <p>Dinner :3</p>
+            </div>
+            <div class="itinerary-item">
+                <span class="time">7.00 PM</span>
+                <p>Back home </p>
+            </div>
+        </div><img src="https://media.tenor.com/fgAWSK7fRR8AAAAM/we-bear-bears-hehe.gif" class="w-60 mx-auto mb-4">
+        <p class="text-rose-400 italic">I can't wait !!!</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
